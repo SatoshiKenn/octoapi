@@ -1,0 +1,57 @@
+// LOCALHOST
+### Get All Travelers
+GET http://localhost:8080/travelers
+###
+
+### Get one traveler
+GET http://localhost:8080/travelers/646941e3af6fd5cddf1d945e
+###
+
+### Create traveler POST
+POST http://localhost:8080/travelers HTTP/1.1 
+content-type: application/json
+
+{
+"name":"Tressa", "rarity":"5★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
+} 
+
+### PUT traveler 
+PUT http://localhost:8080/travelers/646941e3af6fd5cddf1d945e HTTP/1.1 
+content-type: application/json
+
+{
+"name":"Tressa", "rarity":"5★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
+} 
+
+### DELETE traveler 
+DELETE http://localhost:8080/travelers/646941e3af6fd5cddf1d945e HTTP/1.1
+
+// PRODUCTION Deploy 
+### Get all contacts 
+GET https://cs341.onrender.com/travelers
+
+### Get contact by id 
+GET https://cs341.onrender.com/travelers/644df681f97506115d36f46c
+
+### Create contact 
+POST https://cs341.onrender.com/travelers HTTP/1.1 
+content-type: application/json
+
+{
+"name":"Tressa", "rarity":"5★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
+} 
+
+### PUT contact 
+PUT https://cs341.onrender.com/contacts/645736e758ae97bfd637fdfe HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"Emerson", "lastName":"Guzman", "email":"emerson.mgp@letsmove.com", "favoriteArtist":"Michael Jackson", "birthday":"01/02/1996"
+}
+
+### DELETE contact 
+DELETE https://cs341.onrender.com/contacts/645736e758ae97bfd637fdfe HTTP/1.1
+
+### DOCUMENTATION
+
+https://cs341.onrender.com/api-docs/
