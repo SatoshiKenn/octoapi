@@ -2,7 +2,7 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: { title: 'CSE 341 API Project', description: 'Kennette Guevara API for CSE341 - Octopath Traveler CotC Travelers' },
-  host: 'cs341.onrender.com',
+  host: 'otcotcapi.onrender.com',
   schemes: ['https'],
 };
 

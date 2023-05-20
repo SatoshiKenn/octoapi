@@ -1,11 +1,11 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "CSE 341 API",
-    "description": "Kennette Guevara API for CSE341",
+    "title": "CSE 341 API Project",
+    "description": "Kennette Guevara API for CSE341 - Octopath Traveler CotC Travelers",
     "version": "1.0.0"
   },
-  "host": "cs341.onrender.com",
+  "host": "otcotcapi.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/contacts/": {
+    "/travelers/": {
       "get": {
         "description": "",
         "produces": [
@@ -43,19 +43,40 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "name": {
                   "example": "any"
                 },
-                "lastName": {
+                "rarity": {
                   "example": "any"
                 },
-                "email": {
+                "job": {
                   "example": "any"
                 },
-                "favoriteArtist": {
+                "influence": {
                   "example": "any"
                 },
-                "birthday": {
+                "hp": {
+                  "example": "any"
+                },
+                "sp": {
+                  "example": "any"
+                },
+                "atk": {
+                  "example": "any"
+                },
+                "def": {
+                  "example": "any"
+                },
+                "mag": {
+                  "example": "any"
+                },
+                "mdef": {
+                  "example": "any"
+                },
+                "crit": {
+                  "example": "any"
+                },
+                "speed": {
                   "example": "any"
                 }
               }
@@ -72,7 +93,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/travelers/{id}": {
       "get": {
         "description": "",
         "produces": [
