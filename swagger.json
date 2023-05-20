@@ -131,19 +131,40 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "name": {
                   "example": "any"
                 },
-                "lastName": {
+                "rarity": {
                   "example": "any"
                 },
-                "email": {
+                "job": {
                   "example": "any"
                 },
-                "favoriteArtist": {
+                "influence": {
                   "example": "any"
                 },
-                "birthday": {
+                "hp": {
+                  "example": "any"
+                },
+                "sp": {
+                  "example": "any"
+                },
+                "atk": {
+                  "example": "any"
+                },
+                "def": {
+                  "example": "any"
+                },
+                "mag": {
+                  "example": "any"
+                },
+                "mdef": {
+                  "example": "any"
+                },
+                "crit": {
+                  "example": "any"
+                },
+                "speed": {
                   "example": "any"
                 }
               }
