@@ -61,11 +61,18 @@ const updateTraveler = async (req, res) => {
     const userId = new ObjectId(req.params.id);
     // be aware of updateOne if you only want to update specific fields
     const traveler = {
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      email: req.body.email,
-      favoriteArtist: req.body.favoriteArtist,
-      birthday: req.body.birthday
+      name: req.body.name,
+      rarity: req.body.rarity,
+      job: req.body.job,
+      influence: req.body.influence,
+      hp: req.body.hp,
+      sp: req.body.sp,
+      atk: req.body.atk,
+      def: req.body.def,
+      mag: req.body.mag,
+      mdef: req.body.mdef,
+      crit: req.body.crit,
+      speed: req.body.speed
     };
 
     const response = await mongodb
