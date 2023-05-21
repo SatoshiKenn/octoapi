@@ -38,7 +38,7 @@ POST https://otcotcapi.onrender.com/travelers HTTP/1.1
 content-type: application/json
 
 {
-"name":"Tressa", "rarity":"5★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
+"name":"Hasumi","rarity":"5★","job":"Dancer","influence":"Power","hp":"2756 (+1000)","sp":"502","atk":"230 (+50)","def":"265 (+50)","mag":"417 (+50)","mdef":"356 (+50)","crit":"264 (+50)","speed":"317 (+50)"
 } 
 
 ### PUT contact 
