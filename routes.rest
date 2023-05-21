@@ -27,13 +27,13 @@ content-type: application/json
 DELETE http://localhost:8080/travelers/646941e3af6fd5cddf1d945e HTTP/1.1
 
 // PRODUCTION Deploy 
-### Get all contacts 
+### Get all travelers 
 GET https://otcotcapi.onrender.com/travelers
 
-### Get contact by id 
+### Get traveler by id 
 GET https://otcotcapi.onrender.com/travelers/644df681f97506115d36f46c
 
-### Create contact 
+### Create traveler 
 POST https://otcotcapi.onrender.com/travelers HTTP/1.1 
 content-type: application/json
 
@@ -41,7 +41,7 @@ content-type: application/json
 "name":"Hasumi","rarity":"5★","job":"Dancer","influence":"Power","hp":"2756 (+1000)","sp":"502","atk":"230 (+50)","def":"265 (+50)","mag":"417 (+50)","mdef":"356 (+50)","crit":"264 (+50)","speed":"317 (+50)"
 } 
 
-### PUT contact 
+### PUT traveler 
 PUT https://otcotcapi.onrender.com/travelers/645736e758ae97bfd637fdfe HTTP/1.1 
 content-type: application/json
 
@@ -49,7 +49,7 @@ content-type: application/json
 "name":"Tressa", "rarity":"4★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
 } 
 
-### DELETE contact 
+### DELETE traveler 
 DELETE https://otcotcapi.onrender.com/travelers/646948ca4a4a2622cf6c2aad HTTP/1.1
 
 ### DOCUMENTATION
