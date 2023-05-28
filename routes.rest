@@ -12,7 +12,7 @@ POST http://localhost:8080/travelers HTTP/1.1
 content-type: application/json
 
 {
-"name":"Tressa", "rarity":"5★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
+"name":"Test", "rarity":"5★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
 } 
 
 ### PUT traveler 
@@ -31,7 +31,7 @@ DELETE http://localhost:8080/travelers/646941e3af6fd5cddf1d945e HTTP/1.1
 GET https://otcotcapi.onrender.com/travelers
 
 ### Get traveler by id 
-GET https://otcotcapi.onrender.com/travelers/644df681f97506115d36f46c
+GET https://otcotcapi.onrender.com/travelers/64698de18b88b6aa52600d83
 
 ### Create traveler 
 POST https://otcotcapi.onrender.com/travelers HTTP/1.1 
@@ -42,15 +42,15 @@ content-type: application/json
 } 
 
 ### PUT traveler 
-PUT https://otcotcapi.onrender.com/travelers/645736e758ae97bfd637fdfe HTTP/1.1 
+PUT https://otcotcapi.onrender.com/travelers/646941e3af6fd5cddf1d945e HTTP/1.1 
 content-type: application/json
 
 {
-"name":"Tressa", "rarity":"4★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
+"name":"Tressa", "rarity":"5★", "job":"Merchant", "influence":"Wealth", "hp":"3080 (+1000)", "sp":"357", "atk":"384 (+50)", "def":"333 (+50)", "mag":"360 (+50)", "mdef":"285 (+50)", "crit":"241 (+50)", "speed":"240 (+50)"
 } 
 
 ### DELETE traveler 
-DELETE https://otcotcapi.onrender.com/travelers/646948ca4a4a2622cf6c2aad HTTP/1.1
+DELETE https://otcotcapi.onrender.com/travelers/64698d2a94276e825620162a HTTP/1.1
 
 ### DOCUMENTATION
 
