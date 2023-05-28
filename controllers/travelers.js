@@ -21,6 +21,9 @@ const getAllTravelers = async (req, res, next) => {
 
 const getSingleTraveler = async (req, res, next) => {
   try {
+    if (!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid traveler id to find a traveler.');
+    }
     console.log("Single successfully request");
     const userId = new ObjectId(req.params.id);
     const result = await mongodb
@@ -37,7 +40,7 @@ const getSingleTraveler = async (req, res, next) => {
   }
 };
 
-const createTraveler1 = async (req, res) => {
+const createTraveler = async (req, res) => {
   try {
     const traveler = {
       name: req.body.name,
@@ -73,31 +76,11 @@ const createTraveler1 = async (req, res) => {
   }
 };
 
-const createTraveler = async (req, res) => {
-  const traveler = {
-    name: req.body.name,
-    rarity: req.body.rarity,
-    job: req.body.job,
-    influence: req.body.influence,
-    hp: req.body.hp,
-    sp: req.body.sp,
-    atk: req.body.atk,
-    def: req.body.def,
-    mag: req.body.mag,
-    mdef: req.body.mdef,
-    crit: req.body.crit,
-    speed: req.body.speed
-  };
-  const response = await mongodb.getDb().db("octopath").collection('travelers').insertOne(traveler);
-  if (response.acknowledged) {
-    res.status(201).json(response);
-  } else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
-  }
-};
-
 const updateTraveler = async (req, res) => {
   try {
+    if (!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid traveler id to update a traveler.');
+    }
     const userId = new ObjectId(req.params.id);
     // be aware of updateOne if you only want to update specific fields
     const traveler = {
@@ -137,6 +120,9 @@ const updateTraveler = async (req, res) => {
 
 const deleteTraveler = async (req, res) => {
   try {
+    if (!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid traveler id to delete a traveler.');
+    }
     const userId = new ObjectId(req.params.id);
     const response = await mongodb
       .getDb()
@@ -145,7 +131,7 @@ const deleteTraveler = async (req, res) => {
       .deleteOne({ _id: userId }, true);
     console.log(response);
     if (response.deletedCount > 0) {
-      res.status(204).send();
+      res.status(200).send();
     } else {
       res
         .status(500)
