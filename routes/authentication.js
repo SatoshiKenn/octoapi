@@ -4,7 +4,7 @@ const passport = require('passport');
 require('../middleware/auth');
 
 router.get('/', (req, res) => {
-    passport.authenticate('google', {scope: ['email', 'profile']});
-});
+    passport.authenticate('google', { scope: [ 'email', 'profile' ] }
+)});
 
 module.exports = router;
